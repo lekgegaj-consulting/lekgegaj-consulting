@@ -12,23 +12,24 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>('en')
-  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Check localStorage first
-    const savedLang = localStorage.getItem('language') as Language | null
-    
-    if (savedLang) {
-      setLanguageState(savedLang)
-    } else {
-      // Detect user's location
-      detectLanguage()
+    try {
+      // Check localStorage first
+      const savedLang = localStorage.getItem('language') as Language | null
+      
+      if (savedLang && (savedLang === 'en' || savedLang === 'al')) {
+        setLanguageState(savedLang)
+      } else {
+        // Detect user's location
+        detectLanguage()
+      }
+    } catch (error) {
+      console.error('Error reading language preference:', error)
     }
-    
-    setMounted(true)
   }, [])
 
-  const detectLanguage = async () => {
+  const detectLanguage = () => {
     try {
       // Try to detect from browser language
       const browserLang = navigator.language.toLowerCase()
@@ -43,7 +44,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       // Try geolocation API (optional - requires user permission)
       if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(
-          async (position) => {
+          (position) => {
             const { latitude, longitude } = position.coords
             
             // Check if coordinates are in Albania (roughly)
@@ -69,13 +70,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
-    localStorage.setItem('language', lang)
+    try {
+      localStorage.setItem('language', lang)
+    } catch (error) {
+      console.error('Error saving language preference:', error)
+    }
   }
 
-  if (!mounted) {
-    return <>{children}</>
-  }
-
+  // Always render children, but context is only available after mount
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}

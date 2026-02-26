@@ -2,9 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    isrMemoryCacheSize: 0,
-  },
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],

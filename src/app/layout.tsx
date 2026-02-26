@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Providers from './providers'
 
-export const dynamic = 'force-dynamic'
-
 export const metadata: Metadata = {
   title: 'Lekgegaj Consulting | Premium Law & Business Consulting in Durrës, Albania',
   description: 'Expert legal and business consulting services in Durrës, Albania. Representation in all courts, criminal, civil, administrative law, and strategic business consulting.',
