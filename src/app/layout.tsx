@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import ClientProviders from '@/components/ClientProviders'
+import Providers from './providers'
 
 export const dynamic = 'force-dynamic'
 
@@ -59,9 +59,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-cream text-charcoal" style={{ fontFamily: 'Inter, sans-serif' }}>
-        <ClientProviders>
+        <Providers>
           {children}
-        </ClientProviders>
+        </Providers>
       </body>
     </html>
   )
