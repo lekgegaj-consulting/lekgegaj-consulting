@@ -1,6 +1,0 @@
-# MSG-285 [TOOL]
-Archived: 2026-02-26T11:03:03.590674+00:00
-
----
-
-{"message": "## MCP Servers matching 'github'\n\n**GitHub**\n- Slug: `github`\n- Description: GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features\n\n**Linear**\n- Slug: `linear`\n- Description: Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations\n\n\n\ud83d\udca1 Use `create_credential_profile_for_agent` with the slug to set up authentication for any of these services.", "toolkits": [{"name": "GitHub", "slug": "github", "description": "GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features", "categories": []}, {"name": "Linear", "slug": "linear", "description": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations", "categories": []}], "total_found": 2}

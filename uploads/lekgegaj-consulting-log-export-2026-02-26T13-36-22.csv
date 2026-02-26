@@ -1,0 +1,146 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2026-02-26 13:35:17,1772112917254,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,92psz-1772112917174-1ec5817bd7f5,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:35:17,1772112917174,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,92psz-1772112917174-1ec5817bd7f5,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,40,iad1,253,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD2JCQ415NJ7M6Z1PFKAWJ6,3HgJhZBbFyk2,1
+2026-02-26 13:35:09,1772112909783,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,spqtc-1772112908941-3aca2d555d7e,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:35:08,1772112908941,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,spqtc-1772112908941-3aca2d555d7e,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,460,iad1,247,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD2J4NY2P8T2KWPF5BKCHSG,3HgJhZBbFyk2,1
+2026-02-26 13:26:46,1772112406345,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/favicon.png,GET,,404,hdqz2-1772112406345-c047ed533031,vercel-favicon/1.0,,production,main,MISS,function,/_not-found,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,18,iad1,251,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD22SVDT3YZNP9VE5MR804S,GBEGoaRr5TGF,1
+2026-02-26 13:26:46,1772112406241,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/favicon.ico,GET,,,n67sh-1772112406241-5bf3b43da867,vercel-favicon/1.0,,production,,,function,/_not-found,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,18,iad1,251,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD22SR5DPN8FDGNE6VP71FZ,GBEGoaRr5TGF,1
+2026-02-26 13:26:46,1772112406087,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,ckq9h-1772112406023-13de77373073,vercel-favicon/1.0,error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:46,1772112406023,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,ckq9h-1772112406023-13de77373073,vercel-favicon/1.0,,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,27,iad1,251,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD22SHETS7Z9FFKKV6Q6G4A,GBEGoaRr5TGF,1
+2026-02-26 13:26:44,1772112404951,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,8m5lk-1772112404852-f0e380966004,vercel-favicon/1.0,error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:44,1772112404852,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,8m5lk-1772112404852-f0e380966004,vercel-favicon/1.0,,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,55,iad1,250,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD22RDB340R86E4RX2684TH,GBEGoaRr5TGF,1
+2026-02-26 13:26:36,1772112396850,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,2frt9-1772112396657-9b57b467b8b9,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:36,1772112396657,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,2frt9-1772112396657-9b57b467b8b9,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,59,iad1,253,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD22GG1EE5HNTWH3THKPY0K,GBEGoaRr5TGF,1
+2026-02-26 13:26:25,1772112385697,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/favicon.ico,GET,,404,47fcg-1772112385697-33f596160d48,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",,production,main,MISS,function,/_not-found,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,27,iad1,253,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD225T28SEBABC16YVCDTVR,GBEGoaRr5TGF,1
+2026-02-26 13:26:20,1772112380780,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,p8jqs-1772112380343-699669389718,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:20,1772112380343,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,p8jqs-1772112380343-699669389718,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,88,iad1,248,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD220S9PZ0AAG62W53QQRSV,GBEGoaRr5TGF,1
+2026-02-26 13:26:13,1772112373947,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/favicon.ico,GET,,,x2wkr-1772112373947-406f193d8b10,vercel-screenshot/1.0,,production,,,function,/_not-found,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,25,iad1,250,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21T993C1WMWA827J2HAX8,lUrS0MjznNKc,1
+2026-02-26 13:26:13,1772112373875,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/favicon.ico,GET,,404,m6sgn-1772112373875-af329a31fd3d,vercel-screenshot/1.0,,production,main,MISS,function,/_not-found,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,25,iad1,267,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21T9EG3JXCWHQWR1JCQQN,aDWnajg7POmi,1
+2026-02-26 13:26:13,1772112373409,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,,lvp9p-1772112373342-401575775738,vercel-screenshot/1.0,error,production,main,,function,,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:13,1772112373342,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,,lvp9p-1772112373342-401575775738,vercel-screenshot/1.0,,production,main,,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,30,iad1,250,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21SM72XHTAHTHP8YPAHBS,lUrS0MjznNKc,1
+2026-02-26 13:26:13,1772112373089,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,,x2wkr-1772112372934-48815001ea4f,vercel-screenshot/1.0,error,production,main,,function,,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:12,1772112372934,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,,x2wkr-1772112372934-48815001ea4f,vercel-screenshot/1.0,,production,main,,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,35,iad1,267,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21SA4MAJ21B3HJQ7BFMS0,aDWnajg7POmi,1
+2026-02-26 13:26:13,1772112373167,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,zrfk8-1772112372308-eacd4592d4b1,vercel-screenshot/1.0,error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:12,1772112372308,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,zrfk8-1772112372308-eacd4592d4b1,vercel-screenshot/1.0,,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,486,iad1,247,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21RSK5ZDNK2TXKQ4N8P8Y,lUrS0MjznNKc,1
+2026-02-26 13:26:12,1772112372674,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,s48hj-1772112372283-5dff25e45344,vercel-screenshot/1.0,error,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,,,,,"Error: useLanguage must be used within LanguageProvider
+    at l (/var/task/.next/server/chunks/635.js:1:22757)
+    at n (/var/task/.next/server/chunks/635.js:1:22248)
+    at p (/var/task/.next/server/app/page.js:1:2760)
+    at nj (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46252)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47572)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547)
+    at nI (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47011)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47718)
+    at nM (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61547)
+    at nL (/var/task/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64547) {
+  digest: '1018974689'
+}",prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,,,
+2026-02-26 13:26:12,1772112372283,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app/,GET,,500,s48hj-1772112372283-5dff25e45344,vercel-screenshot/1.0,,production,main,MISS,function,/,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,lekgegaj-consulting-if08po6xc-lekgegaj-consultings-projects.vercel.app,dpl_BZJFGs2f447gN78BvRNdGAYCCngP,250,iad1,266,2048,,prj_DEuleNJgVCCZp6FCHka3dIUSM103,,,01KJD21RS1RJ3RVCND2T70C24J,aDWnajg7POmi,1
