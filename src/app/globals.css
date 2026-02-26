@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f7f4;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #0f1b3c;
+}
+
+.tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background-color: #0f1b3c;
+  color: #f8f7f4;
+  border: 2px solid #c9a961;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #1a2f5a;
+  box-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background-color: transparent;
+  color: #0f1b3c;
+  border: 2px solid #0f1b3c;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #f8f7f4;
+}
+
+.btn-gold {
+  padding: 14px 32px;
+  background-color: #c9a961;
+  color: #0f1b3c;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background-color: #b8935a;
+  box-shadow: 0 8px 24px rgba(15, 27, 60, 0.12);
+}
+
+.btn-ghost {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #c9a961;
+  border: 1px solid #c9a961;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background-color: #fef9f3;
+}
+
+a {
+  color: #c9a961;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b8935a;
+}
+
+.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.card-service {
+  background-color: #f8f7f4;
+  border: 1px solid #e8e6e1;
+  border-left: 4px solid #c9a961;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(15, 27, 60, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card-service:hover {
+  box-shadow: 0 8px 24px rgba(15, 27, 60, 0.12);
+  transform: translateY(-2px);
+}
+
+.card-contact {
+  background-color: #0f1b3c;
+  color: #f8f7f4;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(15, 27, 60, 0.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f7f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a961;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8935a;
+}
