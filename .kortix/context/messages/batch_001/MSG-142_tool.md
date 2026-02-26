@@ -1,0 +1,6 @@
+# MSG-142 [TOOL]
+Archived: 2026-02-26T06:10:43.120426+00:00
+
+---
+
+{"output": "root@9bb9c805-3b35-48d6-b875-b2d77c6a182d:/app# cd /workspace\r\n\rroot@9bb9c805-3b35-48d6-b875-b2d77c6a182d:/workspace# cd /workspace && npm run build 2>&1 | tail -20; echo '__CMD_DONE_8f50e93a__' $?\r\n\r \u2713 Compiled successfully\r\n   Linting and checking validity of types ...\r\n\r\n./src/app/layout.tsx\r\n56:9  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font\r\n\r\ninfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules\r\nFailed to compile.\r\n\r\n./src/app/contact/page.tsx:5:16\r\nType error: 'Phone' is declared but its value is never read.\r\n\r\n  3 | import Header from '@/components/Header'\r\n  4 | import Footer from '@/components/Footer'\r\n> 5 | import { Mail, Phone, MapPin, Scale, Briefcase, Send } from 'lucide-react'\r\n    |                ^\r\n  6 | import { useState } from 'react'\r\n  7 | import Image from 'next/image'\r\n  8 |\r\nNext.js build worker exited with code: 1 and signal: null", "cwd": "/workspace", "exit_code": 0}

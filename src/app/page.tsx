@@ -1,15 +1,14 @@
-import { Metadata } from 'next'
+'use client'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Briefcase, Scale, Shield, Globe, ArrowRight, CheckCircle } from 'lucide-react'
-
-export const metadata: Metadata = {
-  title: 'Lekgegaj Consulting | Premium Law & Business Consulting',
-  description: 'Expert legal and business consulting services in Durrës, Albania. Trusted by clients across Europe.',
-}
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Home() {
+  const { t } = useTranslation()
+
   return (
     <>
       <Header />
@@ -19,17 +18,17 @@ export default function Home() {
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
               <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-cream">
-                Premium Legal & Business Consulting
+                {t('home.hero.title')}
               </h1>
               <p className="text-lg md:text-xl text-cream/90 mb-8 leading-relaxed">
-                Expert guidance in law and business strategy. Trusted by clients across Europe and beyond.
+                {t('home.hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/services" className="btn-primary">
-                  Explore Our Services
+                  {t('home.hero.cta1')}
                 </Link>
                 <Link href="/contact" className="btn-secondary">
-                  Get Consultation
+                  {t('home.hero.cta2')}
                 </Link>
               </div>
             </div>
@@ -40,7 +39,7 @@ export default function Home() {
         <section className="section-padding bg-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-navy-600">
-              Why Choose Lekgegaj Consulting
+              {t('home.why.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Card 1 */}
@@ -49,10 +48,10 @@ export default function Home() {
                   <Scale className="text-cream" size={24} />
                 </div>
                 <h3 className="font-playfair text-xl font-bold mb-3 text-navy-600">
-                  Comprehensive Legal Services
+                  {t('home.why.card1.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Representation across all courts and judiciary levels in Albania. Criminal, civil, administrative, and family law expertise.
+                  {t('home.why.card1.desc')}
                 </p>
               </div>
 
@@ -62,10 +61,10 @@ export default function Home() {
                   <Briefcase className="text-cream" size={24} />
                 </div>
                 <h3 className="font-playfair text-xl font-bold mb-3 text-navy-600">
-                  Strategic Business Consulting
+                  {t('home.why.card2.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Business development, sales & marketing strategy, commercial contracts, and business planning expertise.
+                  {t('home.why.card2.desc')}
                 </p>
               </div>
 
@@ -75,10 +74,10 @@ export default function Home() {
                   <Globe className="text-cream" size={24} />
                 </div>
                 <h3 className="font-playfair text-xl font-bold mb-3 text-navy-600">
-                  International Standard
+                  {t('home.why.card3.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Premium service delivery meeting international standards. Professional team with deep expertise.
+                  {t('home.why.card3.desc')}
                 </p>
               </div>
 
@@ -88,10 +87,10 @@ export default function Home() {
                   <Shield className="text-cream" size={24} />
                 </div>
                 <h3 className="font-playfair text-xl font-bold mb-3 text-navy-600">
-                  Client-Focused
+                  {t('home.why.card4.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Personalized attention to every case and project. We understand your unique needs and deliver results.
+                  {t('home.why.card4.desc')}
                 </p>
               </div>
             </div>
@@ -102,7 +101,7 @@ export default function Home() {
         <section className="section-padding bg-navy-600 text-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-gold-700">
-              Our Services
+              {t('home.services.title')}
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Legal Services */}
@@ -110,37 +109,37 @@ export default function Home() {
                 <div className="flex items-center gap-3 mb-6">
                   <Scale className="text-gold-700" size={32} />
                   <h3 className="font-playfair text-3xl font-bold text-gold-700">
-                    Legal Services
+                    {t('home.services.legal.title')}
                   </h3>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Representation in all courts and levels of judiciary</span>
+                    <span>{t('home.services.legal.item1')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Criminal matters</span>
+                    <span>{t('home.services.legal.item2')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Civil matters</span>
+                    <span>{t('home.services.legal.item3')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Administrative matters</span>
+                    <span>{t('home.services.legal.item4')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Family matters</span>
+                    <span>{t('home.services.legal.item5')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Residence permits & expulsion removal</span>
+                    <span>{t('home.services.legal.item6')}</span>
                   </li>
                 </ul>
                 <Link href="/services#legal" className="btn-gold inline-flex items-center gap-2">
-                  Learn More <ArrowRight size={18} />
+                  {t('home.services.legal.learnMore')} <ArrowRight size={18} />
                 </Link>
               </div>
 
@@ -149,33 +148,33 @@ export default function Home() {
                 <div className="flex items-center gap-3 mb-6">
                   <Briefcase className="text-gold-700" size={32} />
                   <h3 className="font-playfair text-3xl font-bold text-gold-700">
-                    Business Consulting
+                    {t('home.services.business.title')}
                   </h3>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Business Development</span>
+                    <span>{t('home.services.business.item1')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Sales & Marketing Strategy</span>
+                    <span>{t('home.services.business.item2')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Commercial Contracts</span>
+                    <span>{t('home.services.business.item3')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Business Plans</span>
+                    <span>{t('home.services.business.item4')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-gold-700 flex-shrink-0 mt-1" size={20} />
-                    <span>Business Management</span>
+                    <span>{t('home.services.business.item5')}</span>
                   </li>
                 </ul>
                 <Link href="/services#business" className="btn-gold inline-flex items-center gap-2">
-                  Learn More <ArrowRight size={18} />
+                  {t('home.services.business.learnMore')} <ArrowRight size={18} />
                 </Link>
               </div>
             </div>
@@ -186,17 +185,17 @@ export default function Home() {
         <section className="section-padding bg-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-navy-600">
-              Our Process
+              {t('home.process.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Step 1 */}
               <div className="text-center">
                 <div className="font-playfair text-6xl font-bold text-gold-700 mb-4">01</div>
                 <h3 className="font-playfair text-2xl font-bold text-navy-600 mb-3">
-                  Initial Consultation
+                  {t('home.process.step1.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  We listen to your needs, understand your situation, and assess how we can help.
+                  {t('home.process.step1.desc')}
                 </p>
               </div>
 
@@ -204,10 +203,10 @@ export default function Home() {
               <div className="text-center">
                 <div className="font-playfair text-6xl font-bold text-gold-700 mb-4">02</div>
                 <h3 className="font-playfair text-2xl font-bold text-navy-600 mb-3">
-                  Strategic Planning
+                  {t('home.process.step2.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Our team develops a comprehensive strategy tailored to your specific goals.
+                  {t('home.process.step2.desc')}
                 </p>
               </div>
 
@@ -215,10 +214,10 @@ export default function Home() {
               <div className="text-center">
                 <div className="font-playfair text-6xl font-bold text-gold-700 mb-4">03</div>
                 <h3 className="font-playfair text-2xl font-bold text-navy-600 mb-3">
-                  Expert Execution
+                  {t('home.process.step3.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  We implement our strategy with precision and professionalism throughout.
+                  {t('home.process.step3.desc')}
                 </p>
               </div>
 
@@ -226,10 +225,10 @@ export default function Home() {
               <div className="text-center">
                 <div className="font-playfair text-6xl font-bold text-gold-700 mb-4">04</div>
                 <h3 className="font-playfair text-2xl font-bold text-navy-600 mb-3">
-                  Results & Support
+                  {t('home.process.step4.title')}
                 </h3>
                 <p className="text-slate text-sm leading-relaxed">
-                  Successful resolution and ongoing support for your future needs.
+                  {t('home.process.step4.desc')}
                 </p>
               </div>
             </div>
@@ -240,13 +239,13 @@ export default function Home() {
         <section className="section-padding bg-navy-600 text-cream">
           <div className="container-custom text-center">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6 text-gold-700">
-              Ready to Get Started?
+              {t('home.cta.title')}
             </h2>
             <p className="text-lg md:text-xl text-cream/90 mb-8 max-w-2xl mx-auto">
-              Contact us today for a free consultation. Our team is ready to help you achieve your goals.
+              {t('home.cta.subtitle')}
             </p>
             <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
-              Contact Us Now <ArrowRight size={20} />
+              {t('home.cta.button')} <ArrowRight size={20} />
             </Link>
           </div>
         </section>

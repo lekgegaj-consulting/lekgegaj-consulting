@@ -2,9 +2,11 @@
 
 import Link from 'next/link'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useTranslation()
 
   return (
     <footer className="bg-navy-600 text-cream">
@@ -19,32 +21,32 @@ export default function Footer() {
               CONSULTING
             </div>
             <p className="text-cream/80 text-sm">
-              Premium law and business consulting in Durrës, Albania.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">Quick Links</h4>
+            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Home
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Services
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  About
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Contact
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -52,21 +54,21 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">Services</h4>
+            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">{t('footer.services')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/services#legal" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Legal Services
+                  {t('services.legal.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services#business" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Business Consulting
+                  {t('services.business.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-cream/80 hover:text-gold-700 transition-colors text-sm">
-                  Get Consultation
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -74,7 +76,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">Contact</h4>
+            <h4 className="font-playfair text-lg font-bold mb-4 text-gold-700">{t('footer.legal')}</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <Mail size={16} className="text-gold-700 mt-1 flex-shrink-0" />
@@ -107,15 +109,15 @@ export default function Footer() {
         <div className="border-t border-navy-500 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-cream/60">
             <div>
-              © {currentYear} Lekgegaj Consulting. All rights reserved.
+              © {currentYear} {t('footer.company')}. {t('footer.copyright')}
             </div>
             <div className="md:text-right space-x-4">
               <Link href="#" className="hover:text-gold-700 transition-colors">
-                Privacy Policy
+                {t('footer.privacy')}
               </Link>
               <span>•</span>
               <Link href="#" className="hover:text-gold-700 transition-colors">
-                Terms of Service
+                {t('footer.terms')}
               </Link>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { LanguageProvider } from '@/providers/LanguageProvider'
 
 export const metadata: Metadata = {
   title: 'Lekgegaj Consulting | Premium Law & Business Consulting in Durrës, Albania',
@@ -56,7 +57,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-cream text-charcoal" style={{ fontFamily: 'Inter, sans-serif' }}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   )

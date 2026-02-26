@@ -1,73 +1,67 @@
-import { Metadata } from 'next'
+'use client'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Scale, Briefcase, FileText, Users, TrendingUp, Shield, ArrowRight } from 'lucide-react'
-
-export const metadata: Metadata = {
-  title: 'Services | Lekgegaj Consulting',
-  description: 'Comprehensive legal and business consulting services in Durrës, Albania.',
-}
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Services() {
+  const { t } = useTranslation()
+
   const legalServices = [
     {
       icon: Scale,
-      title: 'Court Representation',
-      description: 'Professional representation in all courts and levels of judiciary in Albania. We advocate for your interests with expertise and dedication.',
+      titleKey: 'services.legal.criminal.title',
+      descKey: 'services.legal.criminal.desc',
     },
     {
       icon: Shield,
-      title: 'Criminal Law',
-      description: 'Defense and prosecution support in criminal cases. We navigate complex criminal law with strategic expertise.',
+      titleKey: 'services.legal.civil.title',
+      descKey: 'services.legal.civil.desc',
     },
     {
       icon: FileText,
-      title: 'Civil Law',
-      description: 'Resolution of civil disputes, contracts, and property matters. We protect your civil rights and interests.',
+      titleKey: 'services.legal.administrative.title',
+      descKey: 'services.legal.administrative.desc',
     },
     {
       icon: Users,
-      title: 'Administrative Law',
-      description: 'Guidance through administrative procedures and disputes. We help you navigate government agencies and regulations.',
+      titleKey: 'services.legal.family.title',
+      descKey: 'services.legal.family.desc',
     },
     {
       icon: Briefcase,
-      title: 'Family Law',
-      description: 'Sensitive handling of family law issues including divorce, custody, and inheritance matters.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Immigration',
-      description: 'Expert assistance with residence permits and expulsion removal cases. We help you navigate immigration matters.',
+      titleKey: 'services.legal.immigration.title',
+      descKey: 'services.legal.immigration.desc',
     },
   ]
 
   const businessServices = [
     {
       icon: TrendingUp,
-      title: 'Business Development',
-      description: 'Strategic planning and execution to grow your business. We identify opportunities and develop actionable strategies.',
+      titleKey: 'services.business.development.title',
+      descKey: 'services.business.development.desc',
     },
     {
       icon: Briefcase,
-      title: 'Sales & Marketing',
-      description: 'Comprehensive sales and marketing strategies to reach your target market and drive revenue growth.',
+      titleKey: 'services.business.marketing.title',
+      descKey: 'services.business.marketing.desc',
     },
     {
       icon: FileText,
-      title: 'Commercial Contracts',
-      description: 'Drafting, review, and negotiation of commercial contracts. We protect your interests in every agreement.',
+      titleKey: 'services.business.contracts.title',
+      descKey: 'services.business.contracts.desc',
     },
     {
       icon: Users,
-      title: 'Business Plans',
-      description: 'Professional business plan development for startups, expansion, and investor presentations.',
+      titleKey: 'services.business.planning.title',
+      descKey: 'services.business.planning.desc',
     },
     {
       icon: Shield,
-      title: 'Business Management',
-      description: 'Ongoing business management consulting to optimize operations and maximize profitability.',
+      titleKey: 'services.business.management.title',
+      descKey: 'services.business.management.desc',
     },
   ]
 
@@ -79,10 +73,10 @@ export default function Services() {
         <section className="bg-gradient-to-br from-navy-600 to-navy-700 text-cream py-24 md:py-32">
           <div className="container-custom text-center">
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-cream">
-              Comprehensive Legal & Business Solutions
+              {t('services.hero.title')}
             </h1>
             <p className="text-lg md:text-xl text-cream/90 max-w-2xl mx-auto">
-              Expert services designed to protect your interests and drive your success.
+              {t('services.hero.subtitle')}
             </p>
           </div>
         </section>
@@ -91,10 +85,10 @@ export default function Services() {
         <section id="legal" className="section-padding bg-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-6 text-navy-600">
-              Legal Services
+              {t('services.legal.title')}
             </h2>
             <p className="text-center text-slate text-lg mb-16 max-w-3xl mx-auto">
-              Our legal team provides comprehensive representation and counsel across all areas of Albanian law. With deep expertise in criminal, civil, administrative, and family matters, we protect your rights and interests with precision and professionalism.
+              {t('services.legal.intro')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {legalServices.map((service, index) => {
@@ -105,10 +99,10 @@ export default function Services() {
                       <Icon className="text-cream" size={24} />
                     </div>
                     <h3 className="font-playfair text-xl font-bold mb-3 text-navy-600">
-                      {service.title}
+                      {t(service.titleKey)}
                     </h3>
                     <p className="text-slate text-sm leading-relaxed">
-                      {service.description}
+                      {t(service.descKey)}
                     </p>
                   </div>
                 )
@@ -121,10 +115,10 @@ export default function Services() {
         <section id="business" className="section-padding bg-navy-600 text-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-6 text-gold-700">
-              Business Consulting
+              {t('services.business.title')}
             </h2>
             <p className="text-center text-cream/90 text-lg mb-16 max-w-3xl mx-auto">
-              Strategic business consulting to help your company grow, succeed, and thrive. From startup planning to corporate strategy, we provide expert guidance tailored to your business goals.
+              {t('services.business.intro')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {businessServices.map((service, index) => {
@@ -135,10 +129,10 @@ export default function Services() {
                       <Icon className="text-cream" size={24} />
                     </div>
                     <h3 className="font-playfair text-xl font-bold mb-3 text-gold-700">
-                      {service.title}
+                      {t(service.titleKey)}
                     </h3>
                     <p className="text-cream/80 text-sm leading-relaxed">
-                      {service.description}
+                      {t(service.descKey)}
                     </p>
                   </div>
                 )
@@ -151,13 +145,13 @@ export default function Services() {
         <section className="section-padding bg-cream">
           <div className="container-custom text-center">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6 text-navy-600">
-              Need Expert Guidance?
+              {t('services.hero.title')}
             </h2>
             <p className="text-lg md:text-xl text-slate mb-8 max-w-2xl mx-auto">
-              Contact us today for a free consultation. Our team is ready to discuss your specific needs.
+              {t('services.hero.subtitle')}
             </p>
             <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
-              Get Consultation <ArrowRight size={20} />
+              {t('nav.contact')} <ArrowRight size={20} />
             </Link>
           </div>
         </section>

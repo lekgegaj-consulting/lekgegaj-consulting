@@ -1,0 +1,6 @@
+# MSG-152 [TOOL]
+Archived: 2026-02-26T06:10:43.120996+00:00
+
+---
+
+{"output": "root@9bb9c805-3b35-48d6-b875-b2d77c6a182d:/app# cd /workspace\r\n\rroot@9bb9c805-3b35-48d6-b875-b2d77c6a182d:/workspace# cd /workspace && npm run build 2>&1 | tail -20; echo '__CMD_DONE_2d799435__' $?\r\n\r \u2713 Compiled successfully\r\n   Linting and checking validity of types ...\r\n\r\n./src/app/layout.tsx\r\n56:9  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font\r\n\r\ninfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules\r\nFailed to compile.\r\n\r\n./src/app/page.tsx:5:36\r\nType error: 'Users' is declared but its value is never read.\r\n\r\n  3 | import Footer from '@/components/Footer'\r\n  4 | import Link from 'next/link'\r\n> 5 | import { Briefcase, Scale, Shield, Users, Globe, ArrowRight, CheckCircle } from 'lucide-react'\r\n    |                                    ^\r\n  6 |\r\n  7 | export const metadata: Metadata = {\r\n  8 |   title: 'Lekgegaj Consulting | Premium Law & Business Consulting',\r\nNext.js build worker exited with code: 1 and signal: null", "cwd": "/workspace", "exit_code": 0}

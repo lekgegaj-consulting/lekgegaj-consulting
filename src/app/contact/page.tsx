@@ -5,8 +5,10 @@ import Footer from '@/components/Footer'
 import { Mail, MapPin, Scale, Briefcase, Send } from 'lucide-react'
 import { useState } from 'react'
 import Image from 'next/image'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Contact() {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,7 +30,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real application, you would send this data to a backend
     console.log('Form submitted:', formData)
     setSubmitted(true)
     setTimeout(() => {
@@ -52,10 +53,10 @@ export default function Contact() {
         <section className="bg-gradient-to-br from-navy-600 to-navy-700 text-cream py-24 md:py-32">
           <div className="container-custom text-center">
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-cream">
-              Contact Us
+              {t('contact.hero.title')}
             </h1>
             <p className="text-lg md:text-xl text-cream/90 max-w-2xl mx-auto">
-              Get in touch with our team. We're here to help with your legal and business needs.
+              {t('contact.hero.subtitle')}
             </p>
           </div>
         </section>
@@ -64,7 +65,7 @@ export default function Contact() {
         <section className="section-padding bg-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-navy-600">
-              Get in Touch
+              {t('contact.info.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {/* Legal Services Card */}
@@ -135,7 +136,7 @@ export default function Contact() {
         <section className="section-padding bg-navy-600 text-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-gold-700">
-              Visit Our Office
+              {t('contact.map.title')}
             </h2>
             
             {/* Office Photo */}
@@ -162,7 +163,7 @@ export default function Contact() {
                 <MapPin className="text-gold-700 flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-playfair text-2xl font-bold text-gold-700 mb-3">
-                    Office Address
+                    {t('contact.info.title')}
                   </h3>
                   <p className="text-cream/90 text-lg leading-relaxed">
                     Lagjia nr.11<br />
@@ -193,14 +194,14 @@ export default function Contact() {
         <section className="section-padding bg-cream">
           <div className="container-custom">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-16 text-navy-600">
-              Send us a Message
+              {t('contact.form.title')}
             </h2>
             <div className="max-w-2xl mx-auto">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-navy-600 font-semibold mb-2">
-                      Name *
+                      {t('contact.form.name')} *
                     </label>
                     <input
                       type="text"
@@ -210,12 +211,12 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-light-gray rounded-sm focus:outline-none focus:border-gold-700 focus:ring-1 focus:ring-gold-700 transition-colors"
-                      placeholder="Your name"
+                      placeholder={t('contact.form.name')}
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-navy-600 font-semibold mb-2">
-                      Email *
+                      {t('contact.form.email')} *
                     </label>
                     <input
                       type="email"
@@ -233,7 +234,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-navy-600 font-semibold mb-2">
-                      Phone (Optional)
+                      {t('contact.form.phone')}
                     </label>
                     <input
                       type="tel"
@@ -247,7 +248,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label htmlFor="serviceType" className="block text-navy-600 font-semibold mb-2">
-                      Service Type *
+                      {t('contact.form.subject')} *
                     </label>
                     <select
                       id="serviceType"
@@ -265,7 +266,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="subject" className="block text-navy-600 font-semibold mb-2">
-                    Subject *
+                    {t('contact.form.subject')} *
                   </label>
                   <input
                     type="text"
@@ -275,13 +276,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-light-gray rounded-sm focus:outline-none focus:border-gold-700 focus:ring-1 focus:ring-gold-700 transition-colors"
-                    placeholder="What is this about?"
+                    placeholder={t('contact.form.subject')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-navy-600 font-semibold mb-2">
-                    Message *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -291,7 +292,7 @@ export default function Contact() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-light-gray rounded-sm focus:outline-none focus:border-gold-700 focus:ring-1 focus:ring-gold-700 transition-colors resize-none"
-                    placeholder="Tell us more about your inquiry..."
+                    placeholder={t('contact.form.message')}
                   />
                 </div>
 
@@ -300,12 +301,12 @@ export default function Contact() {
                   className="btn-primary w-full flex items-center justify-center gap-2"
                 >
                   <Send size={18} />
-                  Send Message
+                  {t('contact.form.submit')}
                 </button>
 
                 {submitted && (
                   <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-sm">
-                    Thank you for your message. We'll get back to you within 24 hours.
+                    {t('contact.form.success')}
                   </div>
                 )}
               </form>
