@@ -1,6 +1,6 @@
 {
   "thread_id": "ee7c4fab-18b1-4dee-b977-f41924b5747c",
-  "total_archived": 169,
+  "total_archived": 291,
   "batches": [
     {
       "batch": 1,
@@ -105,18 +105,106 @@
         "Deployment to Vercel (production)"
       ],
       "archived_at": "2026-02-26T06:10:55.450149+00:00"
+    },
+    {
+      "batch": 2,
+      "messages": "170-278",
+      "message_count": 109,
+      "message_ids": [
+        "bb9d4093-1a1b-44e3-8fc7-4ad9b005b372",
+        "2b3f080d-2bdc-4816-a38d-c79920dc4b55"
+      ],
+      "tool_results": [
+        "tooluse_o1gG3s81y1veh1lkEmugOD",
+        "tooluse_6YjHFqi4UPLKSdcJUG4nom",
+        "tooluse_9FQ825EklOLLRSYaMZ5yZb",
+        "tooluse_p67Bk88Dq75Heuz926WZ3f",
+        "tooluse_AD6bsLH7K5cQ6yy4XMUd7I",
+        "tooluse_I2MwtsjYD0722ZbPIrpX0n",
+        "tooluse_cGXdhXcT8L29QKNlcpDjCM",
+        "tooluse_t3ohcNu89v2o9ZEKKTXDvN",
+        "tooluse_DFzKbxhLmZX6a0ceEtM5p5",
+        "tooluse_tJEoOF0B3aDUEACZ23kcnU",
+        "tooluse_IwXZyZyfeh625Hswkip73v",
+        "tooluse_kZpJhggNpL7tDfL3K1hUud",
+        "tooluse_O7rkACBURpNkToSsAOgKtt",
+        "tooluse_NmV0UZ5uZUrmffFCM2o0Ki",
+        "tooluse_LfT9zOE9WwzOBAL2AcYT1s",
+        "tooluse_pm5Wu6ii0Lcog3Lxpe66JY",
+        "tooluse_qskavc7hysjymKUQrPmYxu",
+        "tooluse_CHpGhjBIYxlzsZwvPoRJ3K",
+        "tooluse_cJVouzFyW1NCqULtqaex7u",
+        "tooluse_ZJED1jSrcMHttuOtR4pPpo",
+        "tooluse_1SW4JMtb5rxUQapu04by8I",
+        "tooluse_u2iSv3mpL9MrJYHcLopAJw",
+        "tooluse_Wtwx4VDxaIlPfz4lBlr9OD",
+        "tooluse_4aGZGD3WWQFhGQyaoVr2EX",
+        "tooluse_vk9JTNUGxRrYYScAkNrPeo",
+        "tooluse_n2ndKJhnzgCcAlp3iJXfIU",
+        "tooluse_gF1EBK0FK9Hq87UwdScfxu",
+        "tooluse_bYZLcHjkyfoY5H9X6B3L3w",
+        "tooluse_lbAEpN53JUXiYmHbJQrpG1",
+        "tooluse_GjyNd40IaEjqBtleOp70aj",
+        "tooluse_gI5g5y70EUIGT9cdJn90mg",
+        "tooluse_FpbrxWAZPkPLvpd9SbTcEB",
+        "tooluse_VsrUD3Tz0DC4pC32UmRAO3",
+        "tooluse_KioQAXqsmpPO0qL2eD6CUF",
+        "tooluse_in1H6orzVcd6upYbVGmT9E",
+        "tooluse_BdRqap5m8sid9iSL62LKh9",
+        "tooluse_JyPa6B1pynJzkyXqCRSS1l",
+        "tooluse_5GDB6DnCmiE0v1w2blAfJc",
+        "tooluse_c4GhQN6fZ0ryflHmP4cIqR",
+        "tooluse_KzYzBlRLLgmbQbKyDEDSHe",
+        "tooluse_tqBrnPrznPWa0OpR2MmL2F",
+        "tooluse_7D7ARpCKQiIkcmsWHiCPVe",
+        "tooluse_pKq62gleJutzMuQu7kwZ9V",
+        "tooluse_5v6RMiWO64bFLI9eCqKGeA",
+        "tooluse_JV0BL83Xwiuk1uvlRXa1pb",
+        "tooluse_YAau39ujHQXQKlSf7Xrkvt",
+        "tooluse_bSYKeHMETp3y72y29sdYHk",
+        "tooluse_HlgVTMkUvPzwe1N803eu1V",
+        "tooluse_d5IqoGiFEa0DULAuPKhBNw",
+        "tooluse_NkbrKh4vH95RvB8dItGhJm",
+        "tooluse_t5YGbsZj1fBFgHM1Jgj3Ho",
+        "tooluse_VdeSFxyhqOBj2i1UQjJMNc"
+      ],
+      "topics": [],
+      "archived_at": "2026-02-26T10:17:28.124697+00:00"
+    },
+    {
+      "batch": 3,
+      "messages": "279-291",
+      "message_count": 13,
+      "message_ids": [
+        "2dbd779e-a66c-4668-8cd3-c4f4facd885c",
+        "0b672fb3-734d-44b9-b4be-4eae171941e4"
+      ],
+      "tool_results": [
+        "tooluse_Su9NThqCCYElrQaE8zp3sS",
+        "tooluse_J2A0Y6bGIMEhgzyo5vVW9G",
+        "tooluse_34JGF8tvTfS8KWiR2afMYE",
+        "tooluse_3iLpSl0WgYXwlL86A5p7lD",
+        "tooluse_B3B2QwRGn3XlWUsYBiet1o"
+      ],
+      "topics": [
+        "i18n / Albanian translation and language switching",
+        "Next.js 14 build / pre-rendering fixes",
+        "GitHub repository integration & OAuth",
+        "Vercel deployment and project delivery (ZIP)"
+      ],
+      "archived_at": "2026-02-26T11:03:30.117660+00:00"
     }
   ],
   "key_facts": {
-    "project_name": "LEKGEGAJ CONSULTING",
+    "project_name": "lekgegaj-consulting",
     "tech_stack": [
-      "Next.js (React)",
-      "TypeScript",
-      "Tailwind CSS",
-      "PostCSS",
-      "Node/npm",
-      "Vercel (deployment target)"
+      "Next.js (v14)",
+      "React",
+      "Vercel (deployment target)",
+      "GitHub (repo: lekgegaj-consulting, branch: main)",
+      "Custom client-side i18n/language context",
+      "Geo-detection for locale defaulting"
     ],
-    "current_goal": "Deploy the completed Next.js site to Vercel for production and generate a live public link"
+    "current_goal": "Use the existing GitHub repo (lekgegaj-consulting, branch main) to push the completed bilingual Next.js project and connect/deploy it to Vercel; deliverable also provided as a downloadable ZIP (uploaded)."
   }
 }
