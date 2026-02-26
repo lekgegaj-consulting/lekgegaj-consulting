@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = 'force-dynamic'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Mail, MapPin, Scale, Briefcase, Send } from 'lucide-react'
