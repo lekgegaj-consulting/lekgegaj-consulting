@@ -77,7 +77,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }
 
-  // Always render children, but context is only available after mount
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}
